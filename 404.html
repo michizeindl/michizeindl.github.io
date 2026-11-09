@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Umgezogen</title>
+<script>
+(function () {
+  var namen = ['gas-und-spass', 'akten-und-action', 'entspannung', 'rohrbruch', 'fokus', 'hammerpreis', 'blinker-links'];
+  var teile = location.pathname.split('/');
+  if (namen.indexOf(teile[1]) >= 0) {
+    location.replace('https://' + teile[1] + '.brandanimalgames.workers.dev/' + teile.slice(2).join('/') + location.search + location.hash);
+  }
+})();
+</script>
+</head>
+<body style="font-family:sans-serif;text-align:center;padding:40px 16px">
+<p>Diese Seite gibt es hier nicht mehr.</p>
+</body>
+</html>
